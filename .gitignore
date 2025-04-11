@@ -5,3 +5,4 @@
 *.pem
 *.key
 crash.log
+Terraform_accessKeys.csv
