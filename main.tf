@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bruno_bucket" {
-  bucket = "bruno-maestriatec-terraform-iac-001"  # Precisa ser único no mundo
+  bucket = "bruno-maestriatec-terraform-iac-002"  # Precisa ser único no mundo
   force_destroy = true
 
   tags = {
