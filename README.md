@@ -9,17 +9,6 @@ Este projeto é mantido por **[Bruno Mendes Augusto](https://github.com/bruno0nl
 
 ---
 
-## 📦 Estrutura
-
-```bash
-terraform-iac/
-├── 01-terraform-basico/
-│   └── 01-primeiro-script/
-│       ├── main.tf
-│       ├── .gitignore
-│       └── terraform.tfstate*
-├── README.md
-└── ...
 
 🚀 Tecnologias Utilizadas
 Terraform
