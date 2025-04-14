@@ -108,5 +108,31 @@ git push -u origin main
 # Alterar recursos criados no terraform (Temos duas formas)
 
 1 Alterações que não precisam recriar o recurso
-2 Alterações que forçam recriar o recurso
+update in-place
 
+2 Alterações que forçam recriar o recurso
+destroi o recurso e cria de novo 
+
+terraform validate
+terraform fmt
+terraform plan -out=“tfplan.out”
+terraform plan “tfplan.out”
+terraform destroy
+
+# Iniciar uma instancia na Aws atraves do Terraform
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+
+# Variaveis no Terraform 
+
+Input Variables customizar sem alterar o codigo fonte, são parecisas com argumentos de funções: 
+
+Output values
+Local values
+
+Argumentos: default, type, description, validation, sensitive
+
+Typos de variaveis: string, number, bool
+Variaveis complexas: list...set...map..object..tuple(<TYPE>)
+
+terraform apply -auto-approve

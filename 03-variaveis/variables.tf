@@ -1,38 +1,38 @@
 variable "aws_region" {
   type        = string
-  description = ""
+  description = "Região AWS onde os recursos serão provisionados"
   default     = "us-east-1"
 }
 
 variable "aws_profile" {
   type        = string
-  description = ""
+  description = "Perfil de credenciais AWS"
   default     = "default"
 }
 
 variable "instance_ami" {
   type        = string
-  description = ""
-  default     = "ami-07a6f770277670015"
+  description = "AMI da instância EC2"
+  default     = "ami-07a6f770277670015" # Amazon Linux 2 us-east-1
 }
 
 variable "instance_type" {
   type        = string
-  description = ""
+  description = "Tipo da instância EC2"
   default     = "t2.micro"
 }
 
 variable "instance_tags" {
   type        = map(string)
-  description = ""
+  description = "Tags aplicadas à instância"
   default = {
-    Name    = "Ubuntu"
+    Name    = "Amzn2"
     Project = "Curso Terraform"
   }
 }
 
 variable "subnet_id" {
   type        = string
-  description = "ID da subnet onde a instância será criada"
-  default     = "subnet-0b31d2c77040b0372" # Subnet Publica 01 da VPC Produção
+  description = "ID da Subnet onde a instância será criada"
+  default     = "subnet-0b31d2c77040b0372" # Subnet Pública 01 da VPC Produção
 }
