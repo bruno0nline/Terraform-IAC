@@ -1,7 +1,7 @@
 
 Repositório pessoal para estudos, projetos e automações com Terraform como Infraestrutura como Código (IaC).
 
-# terraform-iac
+# Terraform IAC
 
 Repositório oficial de automações com [Terraform](https://www.terraform.io/) usando a abordagem **IaC (Infrastructure as Code)**.
 
