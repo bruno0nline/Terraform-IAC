@@ -171,3 +171,30 @@ Complexos: `list`, `set`, `map`, `object`, `tuple(<TYPE>)`
 ```bash
 terraform apply -auto-approve
 ```
+
+# As variaveis podem ser setadas em RunTime na hora de executar o codigo essa é uma das formas.
+
+Podemos usar variaveis de ambiente no comando:
+Ex: TF_VAR_aws_profile=default terraform plan
+
+Podemos usar a flag 
+terraform plan -var="aws_profile=default"
+terraform plan -var="aws_profile=default" -var="instance_type=t3.medium"
+
+Qualquer arquivo chamado terraform.tfvars e nome-do-arquivo.auto.tfvars vão ser automaticmaente interpretados pelo terraform.
+
+terraform plan -var-file="prod.tfvars"
+
+terraform apply -var-file="prod.tfvars" -auto-approve
+
+terraform destroy -var-file="prod.tfvars" -auto-approve
+
+O conceito de tags se aplica em qualquer comando, plan, apply. destroy e outros.
+
+# Interpolação - Locals e Outputs
+
+https://registry.terraform.io/providers/ContentSquare/random/latest/docs/resources/pet
+
+Utilização do provider Random pra fazer a concatenização
+Locals serve pra escrever variavies que se repetem
+Outputs para retornar os valores na tela
