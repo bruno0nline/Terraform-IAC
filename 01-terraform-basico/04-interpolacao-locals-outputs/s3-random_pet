@@ -1,0 +1,10 @@
+resource "aws_s3_bucket" "this" {
+  bucket = "${random_pet.bucket.id}-${var.environment}"
+
+  tags = {
+    service     = "Curso Terraform"
+    ManagedBy   = "Terraform"
+    Envinroment = var.environment
+    Owner       = "Bruno Augusto"
+  }
+}
