@@ -26,8 +26,9 @@ variable "instance_tags" {
   type        = map(string)
   description = "Tags aplicadas à instância"
   default = {
-    Name    = "Amzn2"
-    Project = "Curso Terraform"
+    Name    = "Remote State"
+    Project = "Terraform"
+    Owner   = "Bruno Mendes Augusto"
   }
 }
 
